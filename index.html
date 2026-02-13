@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Event Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>🎯 Smart Event Dashboard</h1>
+
+    <div class="container">
+
+        <!-- LEFT: FORM -->
+        <div class="form-container">
+            <h2>Add New Event</h2>
+
+            <form id="eventForm">
+                <label>Event Title</label>
+                <input type="text" id="eventTitle" required>
+
+                <label>Event Date</label>
+                <input type="date" id="eventDate" required>
+
+                <label>Category</label>
+                <select id="eventCategory" required>
+                    <option value="Conference">Conference</option>
+                    <option value="Workshop">Workshop</option>
+                    <option value="Meetup">Meetup</option>
+                    <option value="Webinar">Webinar</option>
+                    <option value="Social">Social</option>
+                </select>
+
+                <label>Description</label>
+                <textarea id="eventDescription" required></textarea>
+
+                <button type="submit" class="primary-btn">Add Event</button>
+            </form>
+        </div>
+
+        <!-- RIGHT: EVENTS -->
+        <div class="event-container">
+            <h2>My Events</h2>
+
+            <div class="btn-row">
+                <button id="clearAllBtn" class="secondary-btn">Clear All</button>
+                <button id="addSampleBtn" class="secondary-btn">Add Sample</button>
+            </div>
+
+            <div id="eventContainer">
+                <div class="empty-state">
+                    No events yet. Add your first event!
+                </div>
+            </div>
+        </div>
+
+        <!-- DOM DEMO -->
+        <div class="dom-container">
+            <h2>DOM Manipulation Demo</h2>
+            <div id="demoContent">
+                Press any key to see the difference!
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
